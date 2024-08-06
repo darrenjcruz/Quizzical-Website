@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="quizzes.css">
+        <link rel="stylesheet" href="../quiz.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .btn-primary{
+                background-color: #A47551;
+                border-color: #523A28;
+                border-width: 3px;
+            }
+
+            .btn-primary:hover{
+                background-color: #523A28;
+                border-color: #523A28;
+            }
+        </style>
+        <title>Grammar Quiz</title>
+    </head>
+    
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../quiz_website.html">Quizical</a>
+                </div>
+          
+                <ul class="nav navbar-nav">
+                    <li id="math"><a href="../quiz_math.html">Math</a></li>
+                    <li id="history"><a href="../quiz_history.html">History</a></li>
+                    <li id="english"><a href="../quiz_english.html">English</a></li>
+                    <li id="science"><a href="../quiz_science.html">Science</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Quiz-->
+   
+        <div id="quiz">
+
+            <!--Jumbotron-->
+            <div class="jumbotron text-center" id="jumbotron">
+                <img src="../assets/grammar.png" class="img-responsive" alt="Responsive image">
+                <h1>Grammar</h1>
+                <p>You can do it?</p>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-2">
+                
+                <!--Question 1-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In which figure of speech, a striking opposition or contrast of words is made in the same sentence to secure emphasis?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiona" onclick="setAnswer('q1', 'Diction', 'a')">Diction</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionb" onclick="setAnswer('q1', 'Apologues', 'b')">Apologues</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionc" onclick="setAnswer('q1', 'Hubris', 'c')">Hubris</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiond" onclick="setAnswer('q1', 'Antithesis', 'd')">Antithesis</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Question 2-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which figure of speech is characterized by the deliberate omission of a word or words?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiona" onclick="setAnswer('q2', 'Imagery', 'a')">Imagery</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionb" onclick="setAnswer('q2', 'Neologism', 'b')">Neologism</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionc" onclick="setAnswer('q2', 'Malapropism', 'c')">Malapropism</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiond" onclick="setAnswer('q2', 'Ellipsis', 'd')">Ellipsis</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 3-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In grammar, what is the name of a word for a peson, place, or thing?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiona" onclick="setAnswer('q3', 'Adverb', 'a')">Adverb</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionb" onclick="setAnswer('q3', 'Noun', 'b')">Noun</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionc" onclick="setAnswer('q3', 'Adjective', 'c')">Adjective</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiond" onclick="setAnswer('q3', 'Verb', 'd')">Verb</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 4-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What is the plural form of the word "goose"?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiona" onclick="setAnswer('q4', 'Gouse', 'a')">Gouse</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionb" onclick="setAnswer('q4', 'Geese', 'b')">Geese</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionc" onclick="setAnswer('q4', 'Geeses', 'c')">Geeses</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiond" onclick="setAnswer('q4', 'Gooses', 'd')">Gooses</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 5-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What is the plural form of the word "moose"?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiona" onclick="setAnswer('q5', 'Moose', 'a')">Moose</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionb" onclick="setAnswer('q5', 'Moos', 'b')">Moos</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionc" onclick="setAnswer('q5', 'Meese', 'c')">Meese</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiond" onclick="setAnswer('q5', 'Mooses', 'd')">Mooses</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 6-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What type of syllable ends with a vowel?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiona" onclick="setAnswer('q6', 'Open syllable', 'a')">Open syllable</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionb" onclick="setAnswer('q6', 'Closed syllable', 'b')">Closed syllable</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionc" onclick="setAnswer('q6', 'Consonant-le syllable', 'c')">Consonant-le syllable</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiond" onclick="setAnswer('q6', 'Diphthong syllable', 'd')">Diphthong syllable</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 7-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In grammar, what is the name of a word that adds meaning to the basic meaning of the main verb?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiona" onclick="setAnswer('q7', 'Auxiliary verb', 'a')">Auxiliary verb</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionb" onclick="setAnswer('q7', 'Intransitive verb', 'b')">Intransitive verb</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionc" onclick="setAnswer('q7', 'Stative verb', 'c')">Stative verb</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiond" onclick="setAnswer('q7', 'Transitive verb', 'd')">Transitive verb</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 8-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In the sentence "John kicked the football across the yard," what is the verb?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiona" onclick="setAnswer('q8', 'John', 'a')">John</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionb" onclick="setAnswer('q8', 'football', 'b')">football</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionc" onclick="setAnswer('q8', 'across', 'c')">across</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiond" onclick="setAnswer('q8', 'kicked', 'd')">kicked</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 9-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What word describes the formation of a word by changing the base or by adding a prefix or a suffix?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiona" onclick="setAnswer('q9', 'Inflection', 'a')">Inflection</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionb" onclick="setAnswer('q9', 'Derivation', 'b')">Derivation</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionc" onclick="setAnswer('q9', 'Exposition', 'c')">Exposition</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiond" onclick="setAnswer('q9', 'Harangue', 'd')">Harangue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 10-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What is a word or a group of words that is self-contradicting called?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiona" onclick="setAnswer('q10', 'Synedoche', 'a')">Synedoche</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionb" onclick="setAnswer('q10', 'Oxymoron', 'b')">Oxymoron</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionc" onclick="setAnswer('q10', 'Antithesis', 'c')">Antithesis</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiond" onclick="setAnswer('q10', 'Litotes', 'd')">Litotes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Calculate Score Button-->
+                <div class="col-sm-6 col-sm-offset-3">
+                    
+                    <button type="button" class="btn btn-secondary btn-block btn-lg" onclick="calculate()">Calculate Score</button>
+                    
+                    <br>
+                    <br>
+                    <!--Hidden Results Box-->
+                    <div class="alert alert-info" role="alert" id="result" style="display: none;">
+                        <h3 align="center">Result:</h3>
+                        <p align="center" id="score"></p>
+                        <br>
+                        <br>
+                        <!--Reset Button-->
+                        <a href="./english_grammar.html" class="btn btn-primary btn-block active" role="button">Reset</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let answerKey = {
+                q1: "Antithesis",
+                q2: "Ellipsis",
+                q3: "Noun",
+                q4: "Geese",
+                q5: "Moose",
+                q6: "Open syllable",
+                q7: "Auxiliary verb",
+                q8: "kicked",
+                q9: "Derivation",
+                q10: "Oxymoron"
+            };
+
+            let answers = {
+                q1: "",
+                q2: "",
+                q3: "",
+                q4: "",
+                q5: "",
+                q6: "",
+                q7: "",
+                q8: "",
+                q9: "",
+                q10: ""
+            };
+
+            function setAnswer(question, answer, option) {
+                answers[question] = answer;
+                
+                var querybuilder = "#" + question + 'option';
+
+                //Changes background color of the buttons to show which was chosen.
+                if (option == 'a') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else if (option == 'b') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else if (option == 'c') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                }
+            };
+
+            function calculate() {
+                let total = 10;
+                let score = 0;
+
+                //Disables all buttons
+                var buttons = document.querySelectorAll(".btn.btn-primary.btn-block");
+                buttons.forEach(function (button) {
+                    button.disabled = true;
+                });
+                
+                for (const question in answers) {
+                    if (answers[question] == answerKey[question]) {
+                        score++;
+                    }
+                }
+
+                let result = (score/total) * 100;
+
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('score').innerText = `Your score is: ${result}%`;
+            };
+        </script>
+    </body>
+</html>

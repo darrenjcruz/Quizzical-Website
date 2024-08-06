@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="quizzes.css">
+        <link rel="stylesheet" href="../quiz.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .btn-primary{
+                background-color: #F67B50;
+                border-color: #A82810;
+                border-width: 3px;
+            }
+
+            .btn-primary:hover{
+                background-color: #A82810;
+                border-color: #A82810;
+            }
+        </style>
+        <title>US History Quiz</title>
+    </head>
+    
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../quiz_website.html">Quizical</a>
+                </div>
+          
+                <ul class="nav navbar-nav">
+                    <li id="math"><a href="../quiz_math.html">Math</a></li>
+                    <li id="history"><a href="../quiz_history.html">History</a></li>
+                    <li id="english"><a href="../quiz_english.html">English</a></li>
+                    <li id="science"><a href="../quiz_science.html">Science</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Quiz-->
+        <div id="quiz">
+
+            <!--Jumbotron-->
+            <div class="jumbotron text-center" id="jumbotron">
+                <img src="../assets/us_history.png" class="img-responsive" alt="Responsive image">
+                <h1>US History</h1>
+                <p>Do you know your history?</p>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-2">
+                
+                <!--Question 1-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which US Political party is known as the Grand Old Party?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiona" onclick="setAnswer('q1', 'Reform Party', 'a')">Reform Party</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionb" onclick="setAnswer('q1', 'Republican Party', 'b')">Republican Party</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionc" onclick="setAnswer('q1', 'Democratic Party', 'c')">Democratic Party</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiond" onclick="setAnswer('q1', 'Libertarian Party', 'd')">Libertarian Party</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Question 2-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which US president signed the Equal Pay Act, which mandated equal pay for equal work?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiona" onclick="setAnswer('q2', 'Lyndon B. Johnson', 'a')">Lyndon B. Johnson</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionb" onclick="setAnswer('q2', 'Dwight D. Eisenhower', 'b')">Dwight D. Eisenhower</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionc" onclick="setAnswer('q2', 'Franklin D. Roosevelt', 'c')">Franklin D. Roosevelt</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiond" onclick="setAnswer('q2', 'John F. Kennedy', 'd')">John F. Kennedy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 3-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which of these is the oldest institution of higher learning in the United States?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiona" onclick="setAnswer('q3', 'Yale University', 'a')">Yale University</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionb" onclick="setAnswer('q3', 'Harvard University', 'b')">Harvard University</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionc" onclick="setAnswer('q3', 'Princton University', 'c')">Princton University</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiond" onclick="setAnswer('q3', 'College of William & Mary', 'd')">College of William & Mary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 4-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In the US Presidential election of 1968, which Democratic candidate did Richard Nixon defeat?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiona" onclick="setAnswer('q4', 'Eugene McCarthy', 'a')">Eugene McCarthy</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionb" onclick="setAnswer('q4', 'Hubert Humphrey', 'b')">Hubert Humphrey</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionc" onclick="setAnswer('q4', 'Lyndon B. Johnson', 'c')">Lyndon B. Johnson</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiond" onclick="setAnswer('q4', 'Robert F. Kennedy', 'd')">Robert F. Kennedy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 5-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In which American organization did female pilots serve during World War II?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiona" onclick="setAnswer('q5', 'WAVES', 'a')">WAVES</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionb" onclick="setAnswer('q5', 'WASP', 'b')">WASP</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionc" onclick="setAnswer('q5', 'WPA', 'c')">WPA</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiond" onclick="setAnswer('q5', 'WAC', 'd')">WAC</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 6-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which of these US states was the first in the country to grant women the right to vote?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiona" onclick="setAnswer('q6', 'California', 'a')">California</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionb" onclick="setAnswer('q6', 'Wyoming', 'b')">Wyoming</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionc" onclick="setAnswer('q6', 'Illinois', 'c')">Illinois</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiond" onclick="setAnswer('q6', 'Washington', 'd')">Washington</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 7-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">How many versions did the American flag have?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiona" onclick="setAnswer('q7', '9', 'a')">9</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionb" onclick="setAnswer('q7', '19', 'b')">19</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionc" onclick="setAnswer('q7', '27', 'c')">27</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiond" onclick="setAnswer('q7', '34', 'd')">34</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 8-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which Massachusetts infantry unit, made up of African Americans, was famous for its fighting prowess and exceptional courage during the American Civil War?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiona" onclick="setAnswer('q8', '2nd Regiment', 'a')">2<sup>nd</sup> Regiment</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionb" onclick="setAnswer('q8', '26th Regiment', 'b')">26<sup>th</sup> Regiment</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionc" onclick="setAnswer('q8', '54th Regiment', 'c')">54<sup>th</sup> Regiment</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiond" onclick="setAnswer('q8', '94th Regiment', 'd')">94<sup>th</sup> Regiment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 9-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In 1987, "The Stars and Stripes Forever" was designated as the official march of the United States. Who composed it?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiona" onclick="setAnswer('q9', 'Scott Joplin', 'a')">Scott Joplin</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionb" onclick="setAnswer('q9', 'John Philip Sousa', 'b')">John Philip Sousa</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionc" onclick="setAnswer('q9', 'Keith Brion', 'c')">Keith Brion</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiond" onclick="setAnswer('q9', 'Karl King', 'd')">Karl King</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 10-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Who was the first American woman to travel into outer space?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiona" onclick="setAnswer('q10', 'Sally Ride', 'a')">Sally Ride</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionb" onclick="setAnswer('q10', 'Eileen Collins', 'b')">Eileen Collins</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionc" onclick="setAnswer('q10', 'Mae Jemison', 'c')">Mae Jemison</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiond" onclick="setAnswer('q10', 'Anne McClain', 'd')">Anne McClain</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Calculate Score Button-->
+                <div class="col-sm-6 col-sm-offset-3">
+                    
+                    <button type="button" class="btn btn-secondary btn-block btn-lg" onclick="calculate()">Calculate Score</button>
+                    
+                    <br>
+                    <br>
+                    <!--Hidden Results Box-->
+                    <div class="alert alert-info" role="alert" id="result" style="display: none;">
+                        <h3 align="center">Result:</h3>
+                        <p align="center" id="score"></p>
+                        <br>
+                        <br>
+                        <!--Reset Button-->
+                        <a href="./history_us_history.html" class="btn btn-primary btn-block active" role="button">Reset</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let answerKey = {
+                q1: "Republican Party",
+                q2: "John F. Kennedy",
+                q3: "Harvard University",
+                q4: "Hubert Humphrey",
+                q5: "WASP",
+                q6: "Wyoming",
+                q7: "27",
+                q8: "54th Regiment",
+                q9: "John Philip Sousa",
+                q10: "Sally Ride"
+            };
+
+            let answers = {
+                q1: "",
+                q2: "",
+                q3: "",
+                q4: "",
+                q5: "",
+                q6: "",
+                q7: "",
+                q8: "",
+                q9: "",
+                q10: ""
+            };
+
+            function setAnswer(question, answer, option) {
+                answers[question] = answer;
+                
+                var querybuilder = "#" + question + 'option';
+
+                //Changes background color of the buttons to show which was chosen.
+                if (option == 'a') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#A82810';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#F67B50';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#F67B50';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#F67B50';
+                } else if (option == 'b') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#A82810';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#F67B50';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#F67B50';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#F67B50';
+                } else if (option == 'c') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#A82810';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#F67B50';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#F67B50';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#F67B50';
+                } else {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#A82810';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#F67B50';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#F67B50';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#F67B50';
+                }
+            };
+
+            function calculate() {
+                let total = 10;
+                let score = 0;
+
+                //Disables all buttons
+                var buttons = document.querySelectorAll(".btn.btn-primary.btn-block");
+                buttons.forEach(function (button) {
+                    button.disabled = true;
+                });
+                
+                for (const question in answers) {
+                    if (answers[question] == answerKey[question]) {
+                        score++;
+                    }
+                }
+
+                let result = (score/total) * 100;
+
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('score').innerText = `Your score is: ${result}%`;
+            };
+        </script>
+    </body>
+</html>

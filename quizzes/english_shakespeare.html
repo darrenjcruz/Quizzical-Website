@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="quizzes.css">
+        <link rel="stylesheet" href="../quiz.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .btn-primary{
+                background-color: #A47551;
+                border-color: #523A28;
+                border-width: 3px;
+            }
+
+            .btn-primary:hover{
+                background-color: #523A28;
+                border-color: #523A28;
+            }
+        </style>
+        <title>Shakespeare Quiz</title>
+    </head>
+    
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../quiz_website.html">Quizical</a>
+                </div>
+          
+                <ul class="nav navbar-nav">
+                    <li id="math"><a href="../quiz_math.html">Math</a></li>
+                    <li id="history"><a href="../quiz_history.html">History</a></li>
+                    <li id="english"><a href="../quiz_english.html">English</a></li>
+                    <li id="science"><a href="../quiz_science.html">Science</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Quiz-->
+        <div id="quiz">
+
+            <!--Jumbotron-->
+            <div class="jumbotron text-center" id="jumbotron">
+                <img src="../assets/shakespeare.png" class="img-responsive" alt="Responsive image">
+                <h1>Shakespeare</h1>
+                <p>To be, or not to be? That is the question.</p>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-2">
+                
+                <!--Question 1-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">The writings of which man acted as the main source of historical material for many Elizabethan playwrights, including Shakespeare?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiona" onclick="setAnswer('q1', 'Sir Thomas North', 'a')">Sir Thomas North</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionb" onclick="setAnswer('q1', 'Edward Hall', 'b')">Edward Hall</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionc" onclick="setAnswer('q1', 'Raphael Holinshed', 'c')">Raphael Holinshed</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiond" onclick="setAnswer('q1', 'Henry Ellis', 'd')">Henry Ellis</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Question 2-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which was the first play on Roman themes written by Shakespeare?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiona" onclick="setAnswer('q2', 'Titus Andronicus', 'a')"><i>Titus Andronicus</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionb" onclick="setAnswer('q2', 'Coriolanus', 'b')"><i>Coriolanus</i></button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionc" onclick="setAnswer('q2', 'Julius Caesar', 'c')"><i>Julius Caesar</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiond" onclick="setAnswer('q2', 'Antony and Cleopatra', 'd')"><i>Antony and Cleopatra</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 3-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In which play by Shakespeare do witches play an important role?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiona" onclick="setAnswer('q3', 'King Lear', 'a')"><i>King Lear</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionb" onclick="setAnswer('q3', 'Hamlet', 'b')"><i>Hamlet</i></button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionc" onclick="setAnswer('q3', 'Macbeth', 'c')"><i>Macbeth</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiond" onclick="setAnswer('q3', 'Othello', 'd')"><i>Othello</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 4-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Between whom does a "merry war" of words go on in Shakespeare's <i>Much Ado About Nothing</i>?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiona" onclick="setAnswer('q4', 'Benedick and Beatrice', 'a')">Benedick and Beatrice</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionb" onclick="setAnswer('q4', 'Dogberry and Don Pedro', 'b')">Dogberry and Don Pedro</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionc" onclick="setAnswer('q4', 'Hero and Claudio', 'c')">Hero and Claudio</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiond" onclick="setAnswer('q4', 'Helena and Bertram', 'd')">Helena and Bertram</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 5-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In which of the following plays by Shakespeare does the character Claudius appear?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiona" onclick="setAnswer('q5', 'The Tempest', 'a')"><i>The Tempest</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionb" onclick="setAnswer('q5', 'Hamlet', 'b')"><i>Hamlet</i></button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionc" onclick="setAnswer('q5', 'Macbeth', 'c')"><i>Macbeth</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiond" onclick="setAnswer('q5', 'King Lear', 'd')"><i>King Lear</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 6-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In which of Shakespeare's plays does the group of clowns Feste, Malvolio, Sir Toby Belch, and Sir Andrew Aguecheek appear?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiona" onclick="setAnswer('q6', 'As You Like It', 'a')"><i>As You Like It</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionb" onclick="setAnswer('q6', 'Macbeth', 'b')"><i>Macbeth</i></button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionc" onclick="setAnswer('q6', 'Comedy of Errors', 'c')"><i>Comedy of Errors</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiond" onclick="setAnswer('q6', 'Twelfth Night', 'd')"><i>Twelfth Night</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 7-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which play by Shakespeare opens with these words: "If music be the food of love, play on"?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiona" onclick="setAnswer('q7', 'Loves Labours Lost', 'a')"><i>Love's Labour's Lost</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionb" onclick="setAnswer('q7', 'King Lear', 'b')"><i>King Lear</i></button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionc" onclick="setAnswer('q7', 'Hamlet', 'c')"><i>Hamlet</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiond" onclick="setAnswer('q7', 'Twelfth Night', 'd')"><i>Twelfth Night</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 8-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which historical character created by Shakespeare boasts that he can "set murtherous Machevil to school"?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiona" onclick="setAnswer('q8', 'Henry VI', 'a')">Henry VI</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionb" onclick="setAnswer('q8', 'Richard II', 'b')">Richard II</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionc" onclick="setAnswer('q8', 'Richard, duke of Gloucester', 'c')">Richard, duke of Gloucester</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiond" onclick="setAnswer('q8', 'Henry V', 'd')">Henry V</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 9-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">In which of the following plays by Shakespeare does the comic character Falstaff appear?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiona" onclick="setAnswer('q9', 'Henry IV, Part 1 and Henry IV, Part 2', 'a')"><i>Henry IV, Part 1</i> and <i>Henry IV, Part 2</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionb" onclick="setAnswer('q9', 'As You Like It', 'b')"><i>As You Like It</i></button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionc" onclick="setAnswer('q9', 'Antony and Cleopatra', 'c')"><i>Antony and Cleopatra</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiond" onclick="setAnswer('q9', 'Richard III', 'd')"><i>Richard III</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 10-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which of these plays by Shakespeare uses a statue to reveal a most dramatic secret?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiona" onclick="setAnswer('q10', 'Timon of Athens', 'a')"><i>Timon of Athens</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionb" onclick="setAnswer('q10', 'The Winters Tale', 'b')"><i>The Winters Tale</i></button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionc" onclick="setAnswer('q10', 'King Lear', 'c')"><i>King Lear</i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiond" onclick="setAnswer('q10', 'Hamlet', 'd')"><i>Hamlet</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Calculate Score Button-->
+                <div class="col-sm-6 col-sm-offset-3">
+                    
+                    <button type="button" class="btn btn-secondary btn-block btn-lg" onclick="calculate()">Calculate Score</button>
+                    
+                    <br>
+                    <br>
+                    <!--Hidden Results Box-->
+                    <div class="alert alert-info" role="alert" id="result" style="display: none;">
+                        <h3 align="center">Result:</h3>
+                        <p align="center" id="score"></p>
+                        <br>
+                        <br>
+                        <!--Reset Button-->
+                        <a href="./english_shakespeare.html" class="btn btn-primary btn-block active" role="button">Reset</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let answerKey = {
+                q1: "Raphael Holinshed",
+                q2: "Titus Andronicus",
+                q3: "Macbeth",
+                q4: "Benedick and Beatrice",
+                q5: "Hamlet",
+                q6: "Twelfth Night",
+                q7: "Twelfth Night",
+                q8: "Richard, duke of Gloucester",
+                q9: "Henry IV, Part 1 and Henry IV, Part 2",
+                q10: "The Winters Tale"
+            };
+
+            let answers = {
+                q1: "",
+                q2: "",
+                q3: "",
+                q4: "",
+                q5: "",
+                q6: "",
+                q7: "",
+                q8: "",
+                q9: "",
+                q10: ""
+            };
+
+            function setAnswer(question, answer, option) {
+                answers[question] = answer;
+                
+                var querybuilder = "#" + question + 'option';
+
+                //Changes background color of the buttons to show which was chosen.
+                if (option == 'a') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else if (option == 'b') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else if (option == 'c') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                }
+            };
+
+            function calculate() {
+                let total = 10;
+                let score = 0;
+
+                //Disables all buttons
+                var buttons = document.querySelectorAll(".btn.btn-primary.btn-block");
+                buttons.forEach(function (button) {
+                    button.disabled = true;
+                });
+                
+                for (const question in answers) {
+                    if (answers[question] == answerKey[question]) {
+                        score++;
+                    }
+                }
+
+                let result = (score/total) * 100;
+
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('score').innerText = `Your score is: ${result}%`;
+            };
+        </script>
+    </body>
+</html>

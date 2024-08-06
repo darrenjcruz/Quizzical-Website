@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="quizzes.css">
+        <link rel="stylesheet" href="../quiz.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .btn-primary{
+                background-color: #7E3680;
+                border-color: #420264;
+                border-width: 3px;
+            }
+
+            .btn-primary:hover{
+                background-color: #420264;
+                border-color: #420264;
+            }
+        </style>
+        <title>Chemistry Quiz</title>
+    </head>
+    
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../quiz_website.html">Quizical</a>
+                </div>
+          
+                <ul class="nav navbar-nav">
+                    <li id="math"><a href="../quiz_math.html">Math</a></li>
+                    <li id="history"><a href="../quiz_history.html">History</a></li>
+                    <li id="english"><a href="../quiz_english.html">English</a></li>
+                    <li id="science"><a href="../quiz_science.html">Science</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Quiz-->
+        <div id="quiz">
+
+            <!--Jumbotron-->
+            <div class="jumbotron text-center" id="jumbotron">
+                <img src="../assets/chemistry.png" class="img-responsive" alt="Responsive image">
+                <h1>Chemistry</h1>
+                <p>Are you a mad scientist?</p>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-2">
+                
+                <!--Question 1-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which of the following can be a major cause of ozone depletion in the Earth's atmosphere?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiona" onclick="setAnswer('q1', 'Acid rain', 'a')">Acid rain</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionb" onclick="setAnswer('q1', 'Methane', 'b')">Methane</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionc" onclick="setAnswer('q1', 'Space debris', 'c')">Space debris</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiond" onclick="setAnswer('q1', 'Chlorofluorocarbons', 'd')">Chlorofluorocarbons</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Question 2-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which law states that the weight of a gas dissolved by a liquid is proportional to the pressure of the gas upon the liquid?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiona" onclick="setAnswer('q2', 'Faradays law', 'a')">Faraday's law</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionb" onclick="setAnswer('q2', 'Henrys law', 'b')">Henry's law</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionc" onclick="setAnswer('q2', 'Daltons law', 'c')">Dalton's law</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiond" onclick="setAnswer('q2', 'Boyles law', 'd')">Boyle's law</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 3-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which of the following is used as an ingredient in alcoholic beverages?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiona" onclick="setAnswer('q3', 'Ethanol', 'a')">Ethanol</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionb" onclick="setAnswer('q3', 'Butanol', 'b')">Butanol</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionc" onclick="setAnswer('q3', 'Catechol', 'c')">Catechol</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiond" onclick="setAnswer('q3', 'Phenol', 'd')">Phenol</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 4-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What is the atomic weight of cobalt?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiona" onclick="setAnswer('q4', '58.933', 'a')">58.933</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionb" onclick="setAnswer('q4', '63.546', 'b')">63.546</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionc" onclick="setAnswer('q4', '44.956', 'c')">44.956</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiond" onclick="setAnswer('q4', '47.867', 'd')">47.867</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 5-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What is the name of an outbreak of fire without application of heat from an external source?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiona" onclick="setAnswer('q5', 'Spontaneous combustion', 'a')">Spontaneous combustion</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionb" onclick="setAnswer('q5', 'Thermokarst', 'b')">Thermokarst</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionc" onclick="setAnswer('q5', 'Flash point', 'c')">Flash point</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiond" onclick="setAnswer('q5', 'Enthalpy', 'd')">Enthalpy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 6-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What chemical element did Dirk Coster and George Charles von Hevesy discover?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiona" onclick="setAnswer('q6', 'Germanium', 'a')">Germanium</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionb" onclick="setAnswer('q6', 'Osmium', 'b')">Osmium</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionc" onclick="setAnswer('q6', 'Lutetium', 'c')">Lutetium</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiond" onclick="setAnswer('q6', 'Hafnium', 'd')">Hafnium</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 7-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which hormone in plants is responsible for fruit ripening?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiona" onclick="setAnswer('q7', 'Methanol', 'a')">Methanol</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionb" onclick="setAnswer('q7', 'Methane', 'b')">Methane</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionc" onclick="setAnswer('q7', 'Acetylene', 'c')">Acetylene</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiond" onclick="setAnswer('q7', 'Ethylene', 'd')">Ethylene</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 8-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">What toxic gas with a musty hay odor was used during World War I?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiona" onclick="setAnswer('q8', 'Tear gas', 'a')">Tear gas</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionb" onclick="setAnswer('q8', 'Phosgene', 'b')">Phosgene</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionc" onclick="setAnswer('q8', 'Chlorine', 'c')">Chlorine</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiond" onclick="setAnswer('q8', 'Mustard', 'd')">Mustard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 9-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Who won the first Nobel Prize for Chemistry?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiona" onclick="setAnswer('q9', 'Whilhelm Ostwald', 'a')">Whilhelm Ostwald</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionb" onclick="setAnswer('q9', 'Jacobus Henricus vant Hoff', 'b')">Jacobus Henricus van't Hoff</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionc" onclick="setAnswer('q9', 'Eduard Buchner', 'c')">Eduard Buchner</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiond" onclick="setAnswer('q9', 'Henri Moissan', 'd')">Henri Moissan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 10-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Which among the following is a noble gas?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiona" onclick="setAnswer('q10', 'Nobelium', 'a')">Nobelium</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionb" onclick="setAnswer('q10', 'Nitrogen', 'b')">Nitrogen</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionc" onclick="setAnswer('q10', 'Argon', 'c')">Argon</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiond" onclick="setAnswer('q10', 'Oxygen', 'd')">Oxygen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Calculate Score Button-->
+                <div class="col-sm-6 col-sm-offset-3">
+                    
+                    <button type="button" class="btn btn-secondary btn-block btn-lg" onclick="calculate()">Calculate Score</button>
+                    
+                    <br>
+                    <br>
+                    <!--Hidden Results Box-->
+                    <div class="alert alert-info" role="alert" id="result" style="display: none;">
+                        <h3 align="center">Result:</h3>
+                        <p align="center" id="score"></p>
+                        <br>
+                        <br>
+                        <!--Reset Button-->
+                        <a href="./science_chemistry.html" class="btn btn-primary btn-block active" role="button">Reset</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let answerKey = {
+                q1: "Chlorofluorocarbons",
+                q2: "Henrys law",
+                q3: "Ethanol",
+                q4: "58.933",
+                q5: "Spontaneous combustion",
+                q6: "Hafnium",
+                q7: "Ethylene",
+                q8: "Phosgene",
+                q9: "Jacobus Henricus vant Hoff",
+                q10: "Argon"
+            };
+
+            let answers = {
+                q1: "",
+                q2: "",
+                q3: "",
+                q4: "",
+                q5: "",
+                q6: "",
+                q7: "",
+                q8: "",
+                q9: "",
+                q10: ""
+            };
+
+            function setAnswer(question, answer, option) {
+                answers[question] = answer;
+                
+                var querybuilder = "#" + question + 'option';
+
+                //Changes background color of the buttons to show which was chosen.
+                if (option == 'a') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#420264';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#7E3680';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#7E3680';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#7E3680';
+                } else if (option == 'b') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#420264';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#7E3680';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#7E3680';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#7E3680';
+                } else if (option == 'c') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#420264';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#7E3680';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#7E3680';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#7E3680';
+                } else {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#420264';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#7E3680';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#7E3680';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#7E3680';
+                }
+            };
+
+            function calculate() {
+                let total = 10;
+                let score = 0;
+
+                //Disables all buttons.
+                var buttons = document.querySelectorAll(".btn.btn-primary.btn-block");
+                buttons.forEach(function (button) {
+                    button.disabled = true;
+                });
+                
+                for (const question in answers) {
+                    if (answers[question] == answerKey[question]) {
+                        score++;
+                    }
+                }
+
+                let result = (score/total) * 100;
+
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('score').innerText = `Your score is: ${result}%`;
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+/*
+CSS Styling for the main quizzes page.
+*/
+
+h2 {
+    font-size: 200px;
+    text-align:center;
+}
+
+p {
+    font-size: 50px;
+    text-align:center;
+}
+
+a .caption h1 {
+    text-align: center;
+}
+
+#math a, #history a, #english a, #science a {
+    color: white;
+}
+
+#math {
+    background-color: #2E8BC0;
+}
+
+#math:hover {
+    background-color: #0C2D48;
+}
+
+#history {
+    background-color: #F67B50;
+}
+
+#history:hover {
+    background-color: #A82810;
+}
+
+#english {
+    background-color: #A47551;
+}
+
+#english:hover {
+    background-color: #523A28;
+}
+
+#science {
+    background-color: #7E3680;
+}
+
+#science:hover {
+    background-color: #420264;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="quiz.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Math Quizzes</title>
+    </head>
+    
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./quiz_website.html">Quizical</a>
+                </div>
+          
+                <ul class="nav navbar-nav">
+                    <li id="math"><a href="./quiz_math.html">Math</a></li>
+                    <li id="history"><a href="./quiz_history.html">History</a></li>
+                    <li id="english"><a href="./quiz_english.html">English</a></li>
+                    <li id="science"><a href="./quiz_science.html">Science</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Quiz Grid-->
+        <div class="container">
+            <h2>Math</h2>
+            <p>Are you good with numbers?</p>
+        
+            <!--Row 1-->
+            <div class="row">
+
+                <!--Addition Quiz-->
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="./quizzes/math_addition.html">
+                            <img src="./assets/addition_thumbnail.png" alt="Lights" style="width: 100%;">
+                            
+                            <div class="caption">
+                                <h1>Addition</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+          
+                <!--Multiplication Quiz-->
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="./quizzes/math_multiplication.html">
+                            <img src="./assets/multiplication_thumbnail.png" alt="Nature" style="width:100%">
+                            
+                            <div class="caption">
+                                <h1>Multiplication</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+          
+                <!--Subtraction Quiz-->
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="./quizzes/math_subtraction.html">
+                            <img src="./assets/subtraction_thumbnail.png" alt="Fjords" style="width:100%">
+                        
+                            <div class="caption">
+                                <h1>Subtraction</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="quizzes.css">
+        <link rel="stylesheet" href="../quiz.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .btn-primary{
+                background-color: #A47551;
+                border-color: #523A28;
+                border-width: 3px;
+            }
+
+            .btn-primary:hover{
+                background-color: #523A28;
+                border-color: #523A28;
+            }
+        </style>
+        <title>SAT Vocabulary Quiz</title>
+    </head>
+    
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../quiz_website.html">Quizical</a>
+                </div>
+          
+                <ul class="nav navbar-nav">
+                    <li id="math"><a href="../quiz_math.html">Math</a></li>
+                    <li id="history"><a href="../quiz_history.html">History</a></li>
+                    <li id="english"><a href="../quiz_english.html">English</a></li>
+                    <li id="science"><a href="../quiz_science.html">Science</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Quiz-->
+        <div id="quiz">
+
+            <!--Jumbotron-->
+            <div class="jumbotron text-center" id="jumbotron">
+                <img src="../assets/sat_vocabulary.png" class="img-responsive" alt="Responsive image">
+                <h1>SAT Vocabulary</h1>
+                <p>Study to get a 800 on English!</p>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-2">
+                
+                <!--Question 1-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Despite the <i>cacophony</i>, the student tried to study.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiona" onclick="setAnswer('q1', 'Loud sounds', 'a')">Loud sounds</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionb" onclick="setAnswer('q1', 'Late hour', 'b')">Late hour</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optionc" onclick="setAnswer('q1', 'Low lighting', 'c')">Low lighting</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q1optiond" onclick="setAnswer('q1', 'Difficult subject', 'd')">Difficult subject</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Question 2-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">The directors latest movie has a <i>redoubtable</i> cast.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiona" onclick="setAnswer('q2', 'Celebrated', 'a')">Celebrated</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionb" onclick="setAnswer('q2', 'Inexperienced', 'b')">Inexperienced</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optionc" onclick="setAnswer('q2', 'Small in number', 'c')">Small in number</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q2optiond" onclick="setAnswer('q2', 'Great in number', 'd')">Great in number</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 3-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Shes very <i>punctilious</i> about grammar.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiona" onclick="setAnswer('q3', 'Precise', 'a')">Precise</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionb" onclick="setAnswer('q3', 'Forgetful', 'b')">Forgetful</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optionc" onclick="setAnswer('q3', 'Unconcerned', 'c')">Unconcerned</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q3optiond" onclick="setAnswer('q3', 'Lazy', 'd')">Lazy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 4-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">The young man enjoyed only <i>ephemeral</i> pleasures.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiona" onclick="setAnswer('q4', 'Temporary', 'a')">Temporary</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionb" onclick="setAnswer('q4', 'Wholesome', 'b')">Wholesome</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optionc" onclick="setAnswer('q4', 'Intellectual', 'c')">Intellectual</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q4optiond" onclick="setAnswer('q4', 'Nighttime', 'd')">Nighttime</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 5-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">The <i>demagogue</i> easily captured everyones attention.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiona" onclick="setAnswer('q5', 'Provocative politician', 'a')">Provocative politician</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionb" onclick="setAnswer('q5', 'Athletics instructor', 'b')">Athletics instructor</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optionc" onclick="setAnswer('q5', 'Street musician', 'c')">Street musician</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q5optiond" onclick="setAnswer('q5', 'Exotic animal', 'd')">Exotic animal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 6-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">The website has <i>galvanized</i> support for the project.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiona" onclick="setAnswer('q6', 'Questioned', 'a')">Questioned</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionb" onclick="setAnswer('q6', 'Stimulated', 'b')">Stimulated</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optionc" onclick="setAnswer('q6', 'Crushed', 'c')">Crushed</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q6optiond" onclick="setAnswer('q6', 'Disclosed', 'd')">Disclosed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 7-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Rediscovering the diary she kept as a teen, she found some entries <i>mawkish</i>.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiona" onclick="setAnswer('q7', 'Hard to decipher', 'a')">Hard to decipher</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionb" onclick="setAnswer('q7', 'Prophetic', 'b')">Prophetic</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optionc" onclick="setAnswer('q7', 'Insightful', 'c')">Insightful</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q7optiond" onclick="setAnswer('q7', 'Overly sentimental', 'd')">Overly sentimental</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 8-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">The boss <i>upbraided</i> her employees.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiona" onclick="setAnswer('q8', 'Scolded', 'a')">Scolded</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionb" onclick="setAnswer('q8', 'Downsized', 'b')">Downsized</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optionc" onclick="setAnswer('q8', 'Promoted', 'c')">Promoted</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q8optiond" onclick="setAnswer('q8', 'Relocated', 'd')">Relocated</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 9-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">The waiter answered questions about the menu <i>brusquely</i>.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiona" onclick="setAnswer('q9', 'Enthusiastically', 'a')">Enthusiastically</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionb" onclick="setAnswer('q9', 'In execssive detail', 'b')">In execssive detail</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optionc" onclick="setAnswer('q9', 'Rudely short', 'c')">Rudely short</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q9optiond" onclick="setAnswer('q9', 'With a foreign accent', 'd')">With a foreign accent</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question 10-->
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">The first time she met her future husband was <i>serendipity</i>.</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="row1">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiona" onclick="setAnswer('q10', 'Unremarkable', 'a')">Unremarkable</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionb" onclick="setAnswer('q10', 'Lucky happenstance', 'b')">Lucky happenstance</button>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optionc" onclick="setAnswer('q10', 'Carefully arranged', 'c')">Carefully arranged</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary btn-block" id="q10optiond" onclick="setAnswer('q10', 'Did not go well', 'd')">Did not go well</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Calculate Score Button-->
+                <div class="col-sm-6 col-sm-offset-3">
+                    
+                    <button type="button" class="btn btn-secondary btn-block btn-lg" onclick="calculate()">Calculate Score</button>
+                    
+                    <br>
+                    <br>
+                    <!--Hidden Results Box-->
+                    <div class="alert alert-info" role="alert" id="result" style="display: none;">
+                        <h3 align="center">Result:</h3>
+                        <p align="center" id="score"></p>
+                        <br>
+                        <br>
+                        <!--Reset Button-->
+                        <a href="./english_SAT_vocabulary.html" class="btn btn-primary btn-block active" role="button">Reset</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let answerKey = {
+                q1: "Loud sounds",
+                q2: "Celebrated",
+                q3: "Precise",
+                q4: "Temporary",
+                q5: "Provocative politician",
+                q6: "Stimulated",
+                q7: "Overly sentimental",
+                q8: "Scolded",
+                q9: "Rudely short",
+                q10: "Lucky happenstance"
+            };
+
+            let answers = {
+                q1: "",
+                q2: "",
+                q3: "",
+                q4: "",
+                q5: "",
+                q6: "",
+                q7: "",
+                q8: "",
+                q9: "",
+                q10: ""
+            };
+
+            function setAnswer(question, answer, option) {
+                answers[question] = answer;
+                
+                var querybuilder = "#" + question + 'option';
+                //Changes background color of the buttons to show which was chosen.
+                if (option == 'a') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else if (option == 'b') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else if (option == 'c') {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'd');
+                    button.style.backgroundColor= '#A47551';
+                } else {
+                    var button = document.querySelector(querybuilder + option);
+                    button.style.backgroundColor = '#523A28';
+                    var button = document.querySelector(querybuilder + 'b');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'c');
+                    button.style.backgroundColor= '#A47551';
+                    var button = document.querySelector(querybuilder + 'a');
+                    button.style.backgroundColor= '#A47551';
+                }
+            };
+
+            function calculate() {
+                let total = 10;
+                let score = 0;
+
+                //Disables all buttons
+                var buttons = document.querySelectorAll(".btn.btn-primary.btn-block");
+                buttons.forEach(function (button) {
+                    button.disabled = true;
+                });
+                
+                for (const question in answers) {
+                    if (answers[question] == answerKey[question]) {
+                        score++;
+                    }
+                }
+
+                let result = (score/total) * 100;
+
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('score').innerText = `Your score is: ${result}%`;
+            };
+        </script>
+    </body>
+</html>
